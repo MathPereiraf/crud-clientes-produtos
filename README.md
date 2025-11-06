@@ -1,37 +1,57 @@
-# CRUD Clientes + Produtos (PHP + MySQLi)
+# LEIAME – CRUD Clientes + Produtos
 
-Projeto exemplo com dois módulos completos (CRUD): **Clientes** e **Produtos**.
+## Tema do Projeto
+Sistema de Cadastro com dois módulos completos (CRUD):
 
-## Requisitos
-- PHP 7.4+
-- MySQL 5.7+ ou MariaDB 10+
-- Servidor local (XAMPP, WampServer, Laragon, etc.)
+1. **Clientes**
+2. **Produtos**
 
-## Instalação
-1. Crie um banco (ex.: `crud_escola`) e **importe** o arquivo `database.sql` pelo phpMyAdmin.
-2. Edite `config.inc.php` e ajuste `DB_HOST`, `DB_USER`, `DB_PASS`, `DB_NAME`.
-3. Coloque a pasta `crud_clientes_produtos` no diretório do seu servidor (ex.: `htdocs/` no XAMPP).
-4. Acesse no navegador: `http://localhost/crud_clientes_produtos/`
+Desenvolvido em **PHP + MySQLi**, HTML e CSS.
 
-## Estrutura
-```
-crud_clientes_produtos/
-├─ config.inc.php
-├─ includes/
-│  ├─ header.php
-│  ├─ footer.php
-│  └─ menu.php
-├─ index.php
-├─ public/
-│  └─ style.css
-├─ clientes/  (CRUD de clientes)
-└─ produtos/  (CRUD de produtos)
-```
+---
 
-## Segurança
-- Uso de **Prepared Statements** (MySQLi) em INSERT/UPDATE/DELETE.
-- `htmlspecialchars()` na saída para evitar XSS.
-- Validação simples no backend.
+## Resumo do Projeto
+O sistema permite:
 
-## Créditos
-Gerado automaticamente para fins didáticos.
+- Cadastrar  
+- Listar  
+- Editar  
+- Excluir  
+
+para **Clientes e Produtos**.
+
+---
+
+## Funcionalidades Implementadas
+
+- CRUD completo para Clientes e Produtos  
+- MySQLi com **Prepared Statements**  
+- Validação simples de formulários  
+- Interface limpa e funcional  
+- Arquivo SQL com tabelas e dados iniciais  
+
+---
+
+## Como Rodar o Projeto
+
+1. Instalar XAMPP/WAMP/Laragon  
+2. Criar banco:
+
+   ```sql
+   CREATE DATABASE crud_escola;
+   ```
+3. Importar `database.sql` no phpMyAdmin  
+4. Colocar a pasta do projeto em `htdocs`  
+5. Ajustar `config.inc.php` se necessário  
+6. Acessar no navegador:
+
+   ```
+   http://localhost/crud_clientes_produtos/
+   ```
+
+---
+
+## Resumo da Entrega
+- Projeto completo  
+- Banco SQL `database.sql`  
+- Documentação (este arquivo `.md`)
